@@ -39,6 +39,21 @@ Complex& Complex::operator*=(const double rhs) {
     return *this;
 }
 
+Complex& Complex::operator/=(const double rhs) {
+    if (rhs == 0.0) {
+        throw std::invalid_argument("division by zero");
+    }
+    re /= rhs;
+    im /= rhs;
+    return *this;
+}
+
+Complex operator/(const Complex& lhs, const double rhs) {
+    Complex result(lhs);
+    result /= rhs;
+    return result;
+}
+
 Complex operator+(const Complex& lhs, const Complex& rhs) {
     Complex sum(lhs);
     sum += rhs;

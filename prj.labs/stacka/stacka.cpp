@@ -6,14 +6,14 @@
 
 StackA::StackA(const StackA& other) 
 	: data_(nullptr)
-	, size(other.size_)
+	, size_(other.size_)
 {
 	if (!other.is_empty())
 	{
 		data_ = new int64_t[size_];
 		for (size_t i = 0; i < size_; i++)
 		{
-			data_[i] = other.data_[i]
+			data_[i] = other.data_[i];
 		}
 	}
 }
@@ -34,7 +34,7 @@ StackA& StackA::operator=(const StackA& other)
 		{
 			delete[] data_;
 			size_ = other.size_;
-			data_ = new int64_t[other.size_);
+			data_ = new int64_t[other.size_];
 			for (size_t i = 0; i < (size_); i++)
 			{
 				data_[i] = other.data_[i];

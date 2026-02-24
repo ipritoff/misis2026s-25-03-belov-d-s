@@ -8,7 +8,7 @@
 class Rational {
 private:
 	std::int32_t num_ = 0;
-	std::int32_t den_ = 0;
+	std::int32_t den_ = 1;
 	void Normalize() noexcept;
 
 public:

@@ -17,5 +17,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 include_directories(prj.labs prj.thirdparty)
 
-add_subdirectory(prj.codeforces)
+
 add_subdirectory(prj.labs)
+add_subdirectory(prj.test)

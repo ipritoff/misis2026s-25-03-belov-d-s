@@ -19,7 +19,7 @@ struct Complex {
     Complex& operator+=(const Complex& rhs);    //сложение с комплексным числом
     Complex& operator+=(const double rhs);      //сложение с действительным числом
     Complex& operator*=(const double rhs);      // умножение на действительное число
-
+    Complex& operator/=(const double rhs);
 
     std::ostream& writeTo(std::ostream& ostrm) const;  // запись в поток
     std::istream& readFrom(std::istream& istrm);       // чтение из потока
@@ -37,6 +37,8 @@ struct Complex {
 
 Complex operator+(const Complex& lhs, const Complex& rhs);  // сложение
 Complex operator-(const Complex& lhs, const Complex& rhs);  // вычитание
+
+Complex operator/(const Complex& lhs, const double rhs);
 
 
 std::ostream& operator<<(std::ostream& ostrm, const Complex& rhs);  //вывод
