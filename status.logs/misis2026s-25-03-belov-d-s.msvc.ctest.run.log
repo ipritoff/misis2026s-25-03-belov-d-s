@@ -41,12 +41,12 @@ Release/doctest_bitset_m.exe
 Release/doctest_bitset_m
 Release/doctest_bitset_m.exe
 4/6 Test #6: doctest_bitsetd_m ................***Not Run   0.00 sec
-5/6 Test #1: doctest_arrayd ...................   Passed    0.11 sec
+5/6 Test #1: doctest_arrayd ...................   Passed    0.10 sec
 6/6 Test #4: doctest_complex_io ...............***Failed    0.04 sec
 
 17% tests passed, 5 tests failed out of 6
 
-Total Test time (real) =   0.20 sec
+Total Test time (real) =   0.19 sec
 
 The following tests FAILED:
 	  2 - doctest_arrayt (Not Run)
