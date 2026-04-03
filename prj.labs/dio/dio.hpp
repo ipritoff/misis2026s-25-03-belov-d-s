@@ -18,7 +18,7 @@ public:
 	std::string& val()
 		const std::string& val() const
 
-		friend std::ostream& operator<<(std::ostream& output_s, const DioStrB& str);
+	friend std::ostream& operator<<(std::ostream& output_s, const DioStrB& str);
 	
 	void read(std::istream& input_s) 
 	void write(std::ostream& output_s) const
